@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شريفة - مطورة تطبيقات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+<h1>اهلا انا شريفه<h1> <p>طالبة شغوفة بصناعة تطبيقات تخدم المجتمع<p>
+
+    </header>
+    
+    <section class="about">
+        <h2>معلومات عني</h2>
+        <div class="about-content">
+            <img src="photo.jpg" alt= "" class="profile-img" >
+            <p>
+                أنا شريفة، وطالبة بجامعة الملك خالد في تخصص تطوير الويب والتطبيقات.
+                أعمل على تطوير تطبيقات مبتكرة تشمل تطبيقات دينية، صحية وسياحية تهدف لخدمة المجتمع
+                شغوفة بتعلم تقنيات جديدة وصناعة تجارب مستخدم تفاعلية وممتعة.
+            </p>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>مشاريعي</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3 onclick="toggleDescription('project1')">تطبيق ديني لكبار السن</h3>
+                <div id="project1" class="project-description">
+                    <p>تطبيق يحتوي على سور القرآن مكتوبة مع خاصية تشغيل الصوت عند الضغط على الآية وخاتم تسبيح يسهل الذكر.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <h3 onclick="toggleDescription('project2')">منصة سياحية ذكية لعسير</h3>
+                <div id="project2" class="project-description">
+                    <p>منصة لتطوير السياحة في عسير تعرض مناطق ومقاهي مع واجهة مستخدم تفاعلية وصورة دائرية لعسير.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <h3 onclick="toggleDescription('project3')">تطبيق مدمج لأدوات البرمجة</h3>
+                <div id="project3" class="project-description">
+                    <p>تطبيق يحتوي على مواقع مثل Replit وGitHub وFigma باستخدام WebView لسهولة الوصول.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>تواصل معي</h2>
+        <form action="#">
+            <input type="text" placeholder="الاسم الكامل" required>
+            <input type="email" placeholder="البريد الإلكتروني" required>
+            <textarea rows="5" placeholder="رسالتك"></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>© شريفة | جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script>
+        function toggleDescription(projectId) {
+            const desc = document.getElementById(projectId);
+            if (desc.style.display === 'block') {
+                desc.style.display = 'none';
+            } else {
+                desc.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
